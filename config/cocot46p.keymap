@@ -124,7 +124,7 @@
 
         Raise {
             bindings = <
-&trans  &kp F1  &kp F2   &kp F3     &kp F4        &HOME_END                      &trans  &trans    &kp UP_ARROW    &trans     &trans  &tog 3
+&trans  &kp F1  &kp F2   &kp F3     &kp F4        &HOME_END                      &trans  &trans    &kp UP_ARROW    &trans     &trans  &to 3
 &trans  &kp F5  &kp F6   &kp F7     &kp F8        &kp PAGE_UP                    &trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans
 &trans  &kp F9  &kp F10  &kp F11    &kp F12       &kp PAGE_DOWN  &trans  &trans  &trans  &trans    &trans          &trans     &trans  &trans
                          &kp LCTRL  &kp LEFT_ALT  &trans         &trans  &trans  &trans  &trans    &trans          &trans
@@ -138,7 +138,7 @@
 &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &ext_power EP_ON                   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
 &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &trans           &trans           &trans           &ext_power EP_OFF                  &trans        &trans        &trans        &trans        &trans        &bt BT_CLR_ALL
 &bootloader      &trans           &trans           &trans           &trans           &trans             &trans  &trans  &trans        &trans        &trans        &trans        &trans        &trans
-                                                   &tog 0           &trans           &trans             &trans  &trans  &trans        &trans        &trans        &trans
+                                                   &to 0            &trans           &trans             &trans  &trans  &trans        &trans        &trans        &trans
             >;
 
             label = "Setting";
