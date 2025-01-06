@@ -76,7 +76,7 @@ layers:
   - Ctl+Z
   - Ctl+X
   - Ctl+C
-  - Ctl+C
+  - Ctl+V
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -169,7 +169,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - BT CLR ALL
   - $$mdi:progress-download$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&soft_off'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
