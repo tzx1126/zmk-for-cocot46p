@@ -19,47 +19,44 @@
 
         left_bkt {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <3 4>;
+            key-positions = <16 15>;
+            layers = <0>;
         };
 
         right_bkt {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <7 8>;
+            key-positions = <19 20>;
+            layers = <0>;
         };
 
         left_brace {
             bindings = <&kp LEFT_BRACE>;
-            key-positions = <27 28>;
+            key-positions = <14 15>;
+            layers = <0>;
         };
 
         right_brace {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <33 34>;
+            key-positions = <20 21>;
+            layers = <0>;
         };
 
         left_par {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <15 16>;
+            key-positions = <17 16>;
+            layers = <0>;
         };
 
         right_par {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <19 20>;
-        };
-
-        pipe {
-            bindings = <&kp PIPE>;
-            key-positions = <5 6>;
-        };
-
-        back_slash {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <17 18>;
+            key-positions = <19 18>;
+            layers = <0>;
         };
 
         win_space {
             bindings = <&kp LG(SPACE)>;
             key-positions = <40 43>;
+            layers = <0>;
         };
     };
 
@@ -74,14 +71,14 @@
             quick-tap-ms = <0>;
         };
 
-        SHIFT_CAP: SHIFT_CAP {
+        SHIFT_CAP: shfit_cap_tap {
             compatible = "zmk,behavior-tap-dance";
             label = "SHIFT_CAP";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
 
-        HOME_END: HOME_END {
+        HOME_END: home_end_tap {
             compatible = "zmk,behavior-tap-dance";
             label = "HOME_END";
             #binding-cells = <0>;
