@@ -74,11 +74,18 @@
             quick-tap-ms = <0>;
         };
 
-        td: shift_cap {
+        SHIFT_CAP: SHIFT_CAP {
             compatible = "zmk,behavior-tap-dance";
-            label = "tapdance";
+            label = "SHIFT_CAP";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+        };
+
+        HOME_END: HOME_END {
+            compatible = "zmk,behavior-tap-dance";
+            label = "HOME_END";
+            #binding-cells = <0>;
+            bindings = <&kp HOME>, <&kp END>;
         };
     };
 
@@ -89,7 +96,7 @@
             bindings = <
 &kp ESCAPE  &kp Q  &kp W  &kp E      &kp R         &kp T                                 &kp Y        &kp U     &kp I      &kp O       &kp P                &kp BSPC
 &kp TAB     &kp A  &kp S  &kp D      &kp F         &kp G                                 &kp H        &kp J     &kp K      &kp L       &as COLON SEMICOLON  &as DOUBLE_QUOTES SINGLE_QUOTE
-&td         &kp Z  &kp X  &kp C      &kp V         &kp B        &mkp MB3  &kp RIGHT_GUI  &kp N        &kp M     &kp COMMA  &kp PERIOD  &kp SLASH            &kp ENTER
+&SHIFT_CAP  &kp Z  &kp X  &kp C      &kp V         &kp B        &mkp MB3  &kp RIGHT_GUI  &kp N        &kp M     &kp COMMA  &kp PERIOD  &kp SLASH            &kp ENTER
                           &kp LCTRL  &kp LEFT_ALT  &lt 1 SPACE  &mkp MB1  &mkp MB2       &lt 2 SPACE  &kp LEFT  &kp RIGHT  &kp C_MUTE
             >;
 
@@ -105,18 +112,18 @@
                                             &trans        &trans        &trans     &trans  &trans  &trans        &kp N0        &kp KP_DOT    &trans
             >;
 
-            label = "Lower";
+            label = "1234";
         };
 
         Raise {
             bindings = <
-&trans  &kp F1  &kp F2   &kp F3     &kp F4        &trans                  &trans  &trans    &kp UP_ARROW    &trans     &trans  &tog 3
-&trans  &kp F5  &kp F6   &kp F7     &kp F8        &trans                  &trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans
-&trans  &kp F9  &kp F10  &kp F11    &kp F12       &trans  &trans  &trans  &trans  &trans    &trans          &trans     &trans  &trans
-                         &kp LCTRL  &kp LEFT_ALT  &trans  &trans  &trans  &trans  &trans    &trans          &trans
+&trans  &kp F1  &kp F2   &kp F3     &kp F4        &HOME_END                      &trans  &trans    &kp UP_ARROW    &trans     &trans  &tog 3
+&trans  &kp F5  &kp F6   &kp F7     &kp F8        &kp PAGE_UP                    &trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans
+&trans  &kp F9  &kp F10  &kp F11    &kp F12       &kp PAGE_DOWN  &trans  &trans  &trans  &trans    &trans          &trans     &trans  &trans
+                         &kp LCTRL  &kp LEFT_ALT  &trans         &trans  &trans  &trans  &trans    &trans          &trans
             >;
 
-            label = "Raise";
+            label = "FFF";
         };
 
         Setting {
