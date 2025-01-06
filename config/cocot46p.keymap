@@ -61,14 +61,15 @@
     };
 
     behaviors {
-        as: auto_shift {
+        as_l: auto_shift_n {
             compatible = "zmk,behavior-hold-tap";
             label = "AUTO_SHIFT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <135>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <0>;
+            flavor = "tap-preferred";
         };
 
         SHIFT_CAP: shfit_cap_tap {
@@ -84,6 +85,15 @@
             #binding-cells = <0>;
             bindings = <&kp HOME>, <&kp END>;
         };
+
+        as_s: auto_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "auto_shift";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <135>;
+        };
     };
 
     keymap {
@@ -91,9 +101,9 @@
 
         Qwer {
             bindings = <
-&kp ESCAPE  &kp Q  &kp W  &kp E      &kp R         &kp T                                 &kp Y        &kp U     &kp I      &kp O       &kp P                &kp BSPC
-&kp TAB     &kp A  &kp S  &kp D      &kp F         &kp G                                 &kp H        &kp J     &kp K      &kp L       &as COLON SEMICOLON  &as DOUBLE_QUOTES SINGLE_QUOTE
-&SHIFT_CAP  &kp Z  &kp X  &kp C      &kp V         &kp B        &mkp MB3  &kp RIGHT_GUI  &kp N        &kp M     &kp COMMA  &kp PERIOD  &kp SLASH            &kp ENTER
+&kp ESCAPE  &kp Q  &kp W  &kp E      &kp R         &kp T                                 &kp Y        &kp U     &kp I      &kp O       &kp P                  &kp BSPC
+&kp TAB     &kp A  &kp S  &kp D      &kp F         &kp G                                 &kp H        &kp J     &kp K      &kp L       &as_s COLON SEMICOLON  &as_s DOUBLE_QUOTES SINGLE_QUOTE
+&SHIFT_CAP  &kp Z  &kp X  &kp C      &kp V         &kp B        &mkp MB3  &kp RIGHT_GUI  &kp N        &kp M     &kp COMMA  &kp PERIOD  &kp SLASH              &kp ENTER
                           &kp LCTRL  &kp LEFT_ALT  &lt 1 SPACE  &mkp MB1  &mkp MB2       &lt 2 SPACE  &kp LEFT  &kp RIGHT  &kp C_MUTE
             >;
 
@@ -103,10 +113,10 @@
 
         Lower {
             bindings = <
-&kp GRAVE       &as EXCL NUMBER_1  &as AT NUMBER_2  &as HASH NUMBER_3  &as DOLLAR NUMBER_4  &as PERCENT N5                  &as CARET NUMBER_6  &as AMPERSAND N7  &as STAR N8   &as LEFT_PARENTHESIS N9  &as RIGHT_PARENTHESIS N0  &kp KP_NUMLOCK
-&trans          &kp LC(A)          &kp LC(S)        &kp LG(D)          &as UNDER MINUS      &as PLUS EQUAL                  &trans              &kp NUMBER_4      &kp N5        &kp NUMBER_6             &trans                    &trans
-&kp LEFT_SHIFT  &kp LC(Z)          &kp LC(X)        &kp LC(C)          &kp LC(C)            &trans          &trans  &trans  &trans              &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3             &kp KP_ENTER              &trans
-                                                    &trans             &trans               &trans          &trans  &trans  &trans              &kp N0            &kp KP_DOT    &trans
+&kp GRAVE       &as_l EXCL NUMBER_1  &as_l AT NUMBER_2  &as_l HASH NUMBER_3  &as_l DOLLAR NUMBER_4  &as_l PERCENT N5                  &as_l CARET NUMBER_6  &as_l AMPERSAND N7  &as_l STAR N8  &as_l LEFT_PARENTHESIS N9  &as_l RIGHT_PARENTHESIS N0  &kp KP_NUMLOCK
+&trans          &kp LC(A)            &kp LC(S)          &kp LG(D)            &as_l UNDER MINUS      &as_l PLUS EQUAL                  &trans                &kp NUMBER_4        &kp N5         &kp NUMBER_6               &trans                      &trans
+&kp LEFT_SHIFT  &kp LC(Z)            &kp LC(X)          &kp LC(C)            &kp LC(V)              &trans            &trans  &trans  &trans                &kp NUMBER_1        &kp NUMBER_2   &kp NUMBER_3               &kp KP_ENTER                &trans
+                                                        &trans               &trans                 &trans            &trans  &trans  &trans                &kp N0              &kp KP_DOT     &trans
             >;
 
             label = "1234";
@@ -127,7 +137,7 @@
             bindings = <
 &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &ext_power EP_ON                   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
 &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &trans           &trans           &trans           &ext_power EP_OFF                  &trans        &trans        &trans        &trans        &trans        &bt BT_CLR_ALL
-&bootloader      &trans           &trans           &trans           &trans           &trans             &trans  &trans  &trans        &trans        &trans        &trans        &trans        &trans
+&bootloader      &soft_off        &trans           &trans           &trans           &trans             &trans  &trans  &trans        &trans        &trans        &trans        &trans        &trans
                                                    &tog 0           &trans           &trans             &trans  &trans  &trans        &trans        &trans        &trans
             >;
 
