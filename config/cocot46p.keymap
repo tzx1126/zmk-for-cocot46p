@@ -103,10 +103,10 @@
 
         Lower {
             bindings = <
-&kp GRAVE       &as EXCL NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                     &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0        &kp KP_NUMLOCK
-&trans          &kp LC(A)          &kp LC(S)     &kp LG(D)     &kp MINUS     &kp EQUAL                  &trans        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans        &trans
-&kp LEFT_SHIFT  &kp LC(Z)          &kp LC(X)     &kp LC(C)     &kp LC(C)     &trans     &trans  &trans  &trans        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_ENTER  &trans
-                                                 &trans        &trans        &trans     &trans  &trans  &trans        &kp N0        &kp KP_DOT    &trans
+&kp GRAVE       &as EXCL NUMBER_1  &as AT NUMBER_2  &as HASH NUMBER_3  &as DOLLAR NUMBER_4  &as PERCENT N5                  &as CARET NUMBER_6  &as AMPERSAND N7  &as STAR N8   &as LEFT_PARENTHESIS N9  &as RIGHT_PARENTHESIS N0  &kp KP_NUMLOCK
+&trans          &kp LC(A)          &kp LC(S)        &kp LG(D)          &as UNDER MINUS      &as PLUS EQUAL                  &trans              &kp NUMBER_4      &kp N5        &kp NUMBER_6             &trans                    &trans
+&kp LEFT_SHIFT  &kp LC(Z)          &kp LC(X)        &kp LC(C)          &kp LC(C)            &trans          &trans  &trans  &trans              &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3             &kp KP_ENTER              &trans
+                                                    &trans             &trans               &trans          &trans  &trans  &trans              &kp N0            &kp KP_DOT    &trans
             >;
 
             label = "1234";
