@@ -24,7 +24,7 @@ layers:
   - L
   - {t: ;, h: ':', s: ':'}
   - {t: '''', h: '"', s: '"'}
-  - '&td'
+  - '&SHIFT_CAP'
   - Z
   - X
   - C
@@ -40,14 +40,14 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:keyboard-space$$', h: Lower}
+  - {t: '$$mdi:keyboard-space$$', h: '1234'}
   - '&mkp MB1'
   - '&mkp MB2'
-  - {t: '$$mdi:keyboard-space$$', h: Raise}
+  - {t: '$$mdi:keyboard-space$$', h: FFF}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-right-bold$$
   - $$mdi:volume-off$$
-  Lower:
+  '1234':
   - {t: '`', s: '~'}
   - '1'
   - '2'
@@ -95,13 +95,13 @@ layers:
   - {t: '0', s: )}
   - KP DOT
   - {t: '$$mdi:transfer$$', type: trans}
-  Raise:
+  FFF:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
   - F3
   - F4
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&HOME_END'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-up-bold$$
@@ -113,7 +113,7 @@ layers:
   - F6
   - F7
   - F8
-  - {t: '$$mdi:transfer$$', type: trans}
+  - PgUp
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -125,7 +125,7 @@ layers:
   - F10
   - F11
   - F12
-  - {t: '$$mdi:transfer$$', type: trans}
+  - PgDn
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
