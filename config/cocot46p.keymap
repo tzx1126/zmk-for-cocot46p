@@ -107,7 +107,7 @@
                           &kp LCTRL  &kp LEFT_ALT  &lt 1 SPACE  &mkp MB1  &mkp MB2       &lt 2 SPACE  &kp LEFT  &kp RIGHT              &kp C_MUTE
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN K_VOLUME_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
             label = "Qwer";
         };
 
