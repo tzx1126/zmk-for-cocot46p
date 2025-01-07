@@ -113,10 +113,10 @@
 
         Lower {
             bindings = <
-&kp GRAVE  &as_l EXCL NUMBER_1  &as_l AT NUMBER_2  &as_l HASH NUMBER_3  &as_l DOLLAR NUMBER_4  &as_l PERCENT N5                  &as_l CARET NUMBER_6  &as_l AMPERSAND N7  &as_l STAR N8  &as_l LEFT_PARENTHESIS N9  &as_l RIGHT_PARENTHESIS N0  &kp KP_NUMLOCK
+&kp GRAVE  &as_l EXCL NUMBER_1  &as_l AT NUMBER_2  &as_l HASH NUMBER_3  &as_l DOLLAR NUMBER_4  &as_l PERCENT N5                  &as_l CARET NUMBER_6  &as_l AMPERSAND N7  &as_l STAR N8  &as_l LEFT_PARENTHESIS N9  &as_l RIGHT_PARENTHESIS N0  &kp DELETE
 &none      &kp LC(A)            &kp LC(S)          &kp LG(D)            &as_l UNDER MINUS      &as_l PLUS EQUAL                  &trans                &kp NUMBER_4        &kp N5         &kp NUMBER_6               &none                       &none
 &trans     &kp LC(Z)            &kp LC(X)          &kp LC(C)            &kp LC(V)              &none             &trans  &trans  &trans                &kp NUMBER_1        &kp NUMBER_2   &kp NUMBER_3               &kp KP_ENTER                &none
-                                                   &trans               &trans                 &trans            &trans  &trans  &trans                &kp N0              &kp KP_DOT     &trans
+                                                   &trans               &trans                 &trans            &trans  &trans  &trans                &kp N0              &kp KP_DOT     &kp KP_NUMLOCK
             >;
 
             label = "1234";
