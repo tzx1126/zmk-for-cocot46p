@@ -1,6 +1,6 @@
 layers:
   Qwer:
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:keyboard-esc$$', s: '`'}
   - Q
   - W
   - E
@@ -34,9 +34,9 @@ layers:
   - RIGHT GUI
   - N
   - M
-  - {t: ',', s: <}
-  - .
-  - {t: /, s: '?'}
+  - {t: ',', h: <, s: <}
+  - {t: ., h: '>'}
+  - {t: /, h: '?', s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
