@@ -59,7 +59,7 @@ layers:
   - {t: '8', h: '*', s: '*'}
   - {t: '9', h: (, s: (}
   - {t: '0', h: ), s: )}
-  - KP NUMLOCK
+  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+A
   - Ctl+S
@@ -94,7 +94,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '0', s: )}
   - KP DOT
-  - {t: '$$mdi:transfer$$', type: trans}
+  - KP NUMLOCK
   FFF:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F1
